@@ -1,0 +1,15 @@
+{
+  "name": "@slate/web",
+  "version": "0.0.0",
+  "description": "Slate web monorepo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "packageManager": "pnpm@9.12.2",
+  "author": "dukc",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "turbo": "^2.2.3"
+  }
+}
