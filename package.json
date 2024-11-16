@@ -4,12 +4,15 @@
   "description": "Slate web monorepo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webos": "turbo run --filter=@slate/web-os",
+    "site": "turbo run --filter=@slate/website",
+    "fix": "turbo run fix"
   },
   "packageManager": "pnpm@9.12.2",
   "author": "dukc",
-  "license": "Apache-2.0",
+  "license": "GPL-3.0-only",
   "devDependencies": {
-    "turbo": "^2.2.3"
+    "@biomejs/biome": "1.9.4",
+    "turbo": "^2.3.0"
   }
 }

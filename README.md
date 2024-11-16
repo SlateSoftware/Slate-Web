@@ -18,11 +18,14 @@ We chose to use a monorepo because we use the same design system across multiple
 `apps/website` - The front facing website
 `packages/ui` - Our React UI kit
 
-#### Usage
+## Dev usage
 
 ```bash
-pnpm install
-pnpm turbo dev --filter=@slate/web-os # or /website or /ui
+pnpm webos dev # the web os dev server
+pnpm site dev # the website dev server
+
+# other sub commands can be used
+pnpm webos build
 ```
 
 # Status
@@ -31,9 +34,9 @@ Version 0.0.0, we are still getting started.
 
 # Web OS
 
-The Slate Web OS is a mockup of what a real, built from the ground up operating system would look like from us. It also serves as a starting point for our desktop envrionment, and a place to test out Slate Desktop to see if you like it.
+The Slate Web OS is a mockup of what a real, built from the ground up operating system would look like from us. It also serves as a starting point for our desktop environment, and a place to test out Slate Desktop to see if you like it.
 
-It is built with Next.js, and unWindow for window and task managment.
+It is built with Next.js, and unWindow for window and task management.
 
 # License
 
