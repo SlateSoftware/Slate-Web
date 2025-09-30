@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "storybook dev -p 6006",
         "build": "storybook build",
-        "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
+        "check": "svelte-check --tsconfig ./tsconfig.app.json && bun tsc -p tsconfig.node.json"
     },
     "devDependencies": {
         "@chromatic-com/storybook": "4.1.1",

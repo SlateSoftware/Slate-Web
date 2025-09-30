@@ -1,1 +1,1 @@
-<p>bun design dev</p>
+<code>bun design dev</code>
