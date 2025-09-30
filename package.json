@@ -6,7 +6,8 @@
     "private": true,
     "scripts": {
         "site": "bun run --filter @slatetech/site",
-        "format": " prettier --write .",
+        "design": "bun run --filter @slatetech/design",
+        "format": "prettier --write .",
         "lint": "bun run eslint . --fix"
     },
     "workspaces": [
