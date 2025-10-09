@@ -34,6 +34,8 @@
         "vitest": "^3.2.4"
     },
     "dependencies": {
+        "@fontsource/dm-mono": "^5.2.7",
+        "@fontsource/dm-sans": "^5.2.8",
         "@tailwindcss/vite": "^4.1.13",
         "tailwindcss": "^4.1.13"
     }

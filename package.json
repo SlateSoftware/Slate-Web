@@ -1,19 +1,5 @@
 {
     "name": "@slatetech/web",
-    "module": "index.ts",
-    "type": "module",
-    "packageManager": "bun@1.2.22",
-    "private": true,
-    "scripts": {
-        "site": "bun run --filter @slatetech/site",
-        "design": "bun run --filter @slatetech/design",
-        "format": "prettier --write .",
-        "lint": "bun run eslint . --fix"
-    },
-    "workspaces": [
-        "packages/*",
-        "apps/*"
-    ],
     "devDependencies": {
         "@types/bun": "latest",
         "eslint": "^9.36.0",
@@ -27,5 +13,17 @@
     },
     "peerDependencies": {
         "typescript": "^5"
-    }
+    },
+    "packageManager": "bun@1.2.22",
+    "private": true,
+    "scripts": {
+        "site": "bun run --filter @slatetech/site",
+        "design": "bun run --filter @slatetech/design",
+        "format": "prettier --write .",
+        "lint": "bun run eslint . --fix"
+    },
+    "workspaces": [
+        "packages/*",
+        "apps/*"
+    ]
 }

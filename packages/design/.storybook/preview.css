@@ -1,0 +1,38 @@
+@import '../src/tailwind.css';
+
+/* Dynamic theme properties */
+
+:root {
+    --current-bg: var(--color-slate-50);
+}
+
+:root.dark,
+.dark {
+    --current-bg: var(--color-slate-950);
+}
+
+/* Global styles */
+body {
+    background-color: var(--current-bg);
+}
+
+/* Storybook specific containers */
+#storybook-root,
+.sb-show-main,
+.sb-main-padded,
+.sb-story,
+.sb-story > div,
+.docs-story,
+#storybook-preview-iframe,
+body[data-storybook] {
+    background-color: var(--current-bg) !important;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+/* Override Storybook's default preview background */
+.sb-show-main.sb-main-padded > div,
+.sb-show-main.sb-main-padded > div > div {
+    background: transparent !important;
+}

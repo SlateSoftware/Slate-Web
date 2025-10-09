@@ -4,11 +4,9 @@
     import { fn } from 'storybook/test';
 
     const { Story } = defineMeta({
-        title: 'Example/Button',
+        title: 'Button',
         component: Button,
-        tags: ['autodocs'],
         argTypes: {
-            backgroundColor: { control: 'color' },
             size: {
                 control: { type: 'select' },
                 options: ['small', 'medium', 'large'],
@@ -20,10 +18,4 @@
     });
 </script>
 
-<Story name="Primary" args={{ primary: true, label: 'Button' }} />
-
-<Story name="Secondary" args={{ label: 'Button' }} />
-
-<Story name="Large" args={{ size: 'large', label: 'Button' }} />
-
-<Story name="Small" args={{ size: 'small', label: 'Button' }} />
+<Story name="Button" args={{ label: 'Button' }} />
