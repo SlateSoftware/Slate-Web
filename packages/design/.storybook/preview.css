@@ -3,12 +3,12 @@
 /* Dynamic theme properties */
 
 :root {
-    --current-bg: var(--color-slate-50);
+    --current-bg: var(--color-bg);
 }
 
 :root.dark,
 .dark {
-    --current-bg: var(--color-slate-950);
+    --current-bg: var(--color-bg);
 }
 
 /* Global styles */

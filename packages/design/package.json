@@ -4,7 +4,7 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "storybook dev -p 6006",
+        "dev": "storybook dev -p 4321",
         "build": "storybook build",
         "check": "svelte-check --tsconfig ./tsconfig.app.json && bun tsc -p tsconfig.node.json"
     },
@@ -37,6 +37,7 @@
         "@fontsource/dm-mono": "^5.2.7",
         "@fontsource/dm-sans": "^5.2.8",
         "@tailwindcss/vite": "^4.1.13",
-        "tailwindcss": "^4.1.13"
+        "tailwindcss": "^4.1.13",
+        "tailwindcss-motion": "^1.1.1"
     }
 }
