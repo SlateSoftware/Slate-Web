@@ -32,41 +32,37 @@
 
     --blur-floating: 64px;
 
-    /* Mapped materials */
-    --color-bg: rgba(241, 241, 241, 1);
     /* Text */
     --color-text: rgba(0, 0, 0, 0.9);
+    --color-text-2: rgba(0, 0, 0, 0.55);
+    --color-text-3: rgba(0, 0, 0, 0.33);
+    --color-text-disabled: rgba(0, 0, 0, 0.3);
     --color-text-solid: var(--color-black);
-    --color-text-invert: var(--color-accent-50);
+    --color-text-invert: rgba(255, 255, 255, 0.9);
     --color-text-solid-invert: var(--color-white);
-    --color-text-success: var(--color-green-800);
-    --color-text-warning: var(--color-yellow-800);
-    --color-text-danger: var(--color-red-800);
-    --color-text-success-contrast: var(--color-green-950);
-    --color-text-warning-contrast: var(--color-yellow-950);
-    --color-text-danger-contrast: var(--color-red-950);
-    --color-text-success-invert: var(--color-green-200);
-    --color-text-warning-invert: var(--color-yellow-200);
-    --color-text-danger-invert: var(--color-red-200);
+
     /* Surface materials */
-    --color-surface-stroke: --alpha(var(--color-accent-900) / 5%);
-    --color-stroke: var(--color-surface-stroke);
-    --color-surface-base: --alpha(var(--color-accent-100) / 64%);
-    --background-image-surface-primary: linear-gradient(
-        --alpha(var(--color-accent-200) / 55%),
-        --alpha(var(--color-accent-100) / 55%)
+    --color-stroke: rgba(0, 0, 0, 0.12);
+    --color-stroke-s: rgba(0, 0, 0, 0.1);
+    --color-stroke-p: rgba(0, 0, 0, 0.33);
+
+    --color-bg: rgba(241, 241, 241, 1);
+
+    --background-image-bg-window: linear-gradient(
+        rgba(237, 237, 237, 0.7),
+        rgba(250, 254, 255, 0.6)
     );
-    --background-image-surface-primary-success: linear-gradient(
-        --alpha(var(--color-green-200) / 55%),
-        --alpha(var(--color-green-100) / 55%)
+    --background-image-fg-base: linear-gradient(
+        rgba(255, 255, 255, 0.24),
+        rgba(255, 255, 255, 0.29)
     );
-    --background-image-surface-primary-warning: linear-gradient(
-        --alpha(var(--color-yellow-200) / 55%),
-        --alpha(var(--color-yellow-100) / 55%)
+    --background-image-fg-base-p: linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.58)
     );
-    --background-image-surface-primary-danger: linear-gradient(
-        --alpha(var(--color-red-200) / 55%),
-        --alpha(var(--color-red-100) / 55%)
+    --background-image-fg-base-s: linear-gradient(
+        rgba(255, 255, 255, 0.17),
+        rgba(255, 255, 255, 0.21)
     );
     --color-surface-component: var(--color-accent-800);
     --color-surface-component-success: var(--color-green-800);
