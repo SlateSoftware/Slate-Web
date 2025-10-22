@@ -48,10 +48,25 @@
 
     --color-bg: rgba(241, 241, 241, 1);
 
+    --color-red: rgba(212, 0, 64, 1);
+    --color-orange: rgba(184, 77, 0, 1);
+    --color-yellow: rgba(148, 105, 3, 1);
+    --color-green: rgba(0, 139, 12, 1);
+    --color-blue: rgba(0, 124, 171, 1);
+    --color-purple: rgba(148, 1, 252, 1);
+
+    --color-red-invert: rgba(255, 108, 123, 1);
+    --color-orange-invert: rgba(241, 128, 69, 1);
+    --color-yellow-invert: rgba(241, 174, 0, 1);
+    --color-green-invert: rgba(0, 198, 22, 1);
+    --color-blue-invert: rgba(0, 177, 242, 1);
+    --color-purple-invert: rgba(184, 135, 255, 1);
+
     --background-image-bg-window: linear-gradient(
         rgba(237, 237, 237, 0.7),
         rgba(250, 254, 255, 0.6)
     );
+
     --background-image-fg-base: linear-gradient(
         rgba(255, 255, 255, 0.24),
         rgba(255, 255, 255, 0.29)
@@ -64,10 +79,64 @@
         rgba(255, 255, 255, 0.17),
         rgba(255, 255, 255, 0.21)
     );
-    --color-surface-component: var(--color-accent-800);
-    --color-surface-component-success: var(--color-green-800);
-    --color-surface-component-warning: var(--color-yellow-800);
-    --color-surface-component-danger: var(--color-red-800);
+
+    --background-image-fg-inset: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.035));
+    --background-image-fg-inset-p: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.035));
+    --background-image-fg-inset-s: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.03));
+
+    --background-image-fg-red: linear-gradient(rgba(255, 108, 123, 0.3), rgba(255, 108, 123, 0.58));
+    --background-image-fg-red-p: linear-gradient(
+        rgba(255, 108, 123, 0.12),
+        rgba(255, 108, 123, 0.18)
+    );
+    --background-image-fg-red-s: linear-gradient(
+        rgba(255, 108, 123, 0.12),
+        rgba(255, 108, 123, 0.18)
+    );
+
+    --background-image-fg-orange: linear-gradient(
+        rgba(241, 128, 69, 0.3),
+        rgba(241, 128, 69, 0.58)
+    );
+    --background-image-fg-orange-p: linear-gradient(
+        rgba(241, 128, 69, 0.12),
+        rgba(241, 128, 69, 0.18)
+    );
+    --background-image-fg-orange-s: linear-gradient(
+        rgba(241, 128, 69, 0.12),
+        rgba(241, 128, 69, 0.18)
+    );
+
+    --background-image-fg-yellow: linear-gradient(rgba(241, 174, 0, 0.3), rgba(241, 174, 0, 0.58));
+    --background-image-fg-yellow-p: linear-gradient(
+        rgba(241, 174, 0, 0.12),
+        rgba(241, 174, 0, 0.18)
+    );
+    --background-image-fg-yellow-s: linear-gradient(
+        rgba(241, 174, 0, 0.12),
+        rgba(241, 174, 0, 0.18)
+    );
+
+    --background-image-fg-green: linear-gradient(rgba(1, 198, 22, 0.3), rgba(1, 198, 22, 0.58));
+    --background-image-fg-green-p: linear-gradient(rgba(1, 198, 22, 0.12), rgba(1, 198, 22, 0.18));
+    --background-image-fg-green-s: linear-gradient(rgba(1, 198, 22, 0.12), rgba(1, 198, 22, 0.18));
+
+    --background-image-fg-blue: linear-gradient(rgba(0, 177, 242, 0.3), rgba(0, 177, 242, 0.58));
+    --background-image-fg-blue-p: linear-gradient(rgba(0, 177, 242, 0.12), rgba(0, 177, 242, 0.18));
+    --background-image-fg-blue-s: linear-gradient(rgba(0, 177, 242, 0.12), rgba(0, 177, 242, 0.18));
+
+    --background-image-fg-purple: linear-gradient(
+        rgba(184, 135, 255, 0.3),
+        rgba(184, 135, 255, 0.58)
+    );
+    --background-image-fg-purple-p: linear-gradient(
+        rgba(184, 135, 255, 0.12),
+        rgba(184, 135, 255, 0.18)
+    );
+    --background-image-fg-purple-s: linear-gradient(
+        rgba(184, 135, 255, 0.12),
+        rgba(184, 135, 255, 0.18)
+    );
 }
 
 @variant dark {
