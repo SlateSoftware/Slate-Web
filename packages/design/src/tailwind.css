@@ -41,13 +41,7 @@
     --color-text-invert: rgba(255, 255, 255, 0.9);
     --color-text-solid-invert: var(--color-white);
 
-    /* Surface materials */
-    --color-stroke: rgba(0, 0, 0, 0.12);
-    --color-stroke-s: rgba(0, 0, 0, 0.1);
-    --color-stroke-p: rgba(0, 0, 0, 0.33);
-
-    --color-bg: rgba(241, 241, 241, 1);
-
+    /* Colors */
     --color-red: rgba(212, 0, 64, 1);
     --color-orange: rgba(184, 77, 0, 1);
     --color-yellow: rgba(148, 105, 3, 1);
@@ -62,10 +56,16 @@
     --color-blue-invert: rgba(0, 177, 242, 1);
     --color-purple-invert: rgba(184, 135, 255, 1);
 
+    /* Materials */
+    --color-bg: rgba(241, 241, 241, 1);
     --background-image-bg-window: linear-gradient(
         rgba(237, 237, 237, 0.7),
         rgba(250, 254, 255, 0.6)
     );
+
+    --color-stroke: rgba(0, 0, 0, 0.12);
+    --color-stroke-s: rgba(0, 0, 0, 0.1);
+    --color-stroke-p: rgba(0, 0, 0, 0.33);
 
     --background-image-fg-base: linear-gradient(
         rgba(255, 255, 255, 0.24),
@@ -141,61 +141,108 @@
 
 @variant dark {
     /* Mapped materials DARK MODE */
-    --color-bg: rgba(23, 23, 23, 1);
+
     /* Text */
     --color-text: rgba(255, 255, 255, 0.9);
+    --color-text-2: rgba(255, 255, 255, 0.45);
+    --color-text-3: rgba(255, 255, 255, 0.25);
+    --color-text-disabled: rgba(255, 255, 255, 0.22);
     --color-text-solid: var(--color-white);
-    --color-text-invert: var(--color-accent-900);
+    --color-text-invert: rgba(0, 0, 0, 0.9);
     --color-text-solid-invert: var(--color-black);
-    --color-text-success: var(--color-green-400);
-    --color-text-warning: var(--color-yellow-400);
-    --color-text-danger: var(--color-red-400);
-    --color-text-success-contrast: var(--color-green-200);
-    --color-text-warning-contrast: var(--color-yellow-200);
-    --color-text-danger-contrast: var(--color-red-200);
-    --color-text-success-invert: var(--color-green-50);
-    --color-text-warning-invert: var(--color-yellow-50);
-    --color-text-danger-invert: var(--color-red-50);
-    /* Surface materials */
-    --color-surface-stroke: --alpha(var(--color-accent-100) / 5%);
-    --color-stroke: var(--color-surface-stroke);
-    --color-surface-base: --alpha(var(--color-accent-900) / 64%);
-    --background-image-surface-primary: linear-gradient(
-        --alpha(var(--color-accent-900) / 55%),
-        --alpha(var(--color-accent-800) / 55%)
+
+    /* Colors */
+
+    --color-red: rgba(255, 108, 123, 1);
+    --color-orange: rgba(241, 128, 69, 1);
+    --color-yellow: rgba(241, 174, 0, 1);
+    --color-green: rgba(0, 198, 22, 1);
+    --color-blue: rgba(0, 177, 242, 1);
+    --color-purple: rgba(184, 135, 255, 1);
+
+    --color-red-invert: rgba(212, 0, 64, 1);
+    --color-orange-invert: rgba(184, 77, 0, 1);
+    --color-yellow-invert: rgba(148, 105, 3, 1);
+    --color-green-invert: rgba(0, 139, 12, 1);
+    --color-blue-invert: rgba(0, 124, 171, 1);
+    --color-purple-invert: rgba(148, 1, 252, 1);
+
+    /* Materials */
+    --color-bg: rgba(23, 23, 23, 1);
+    --background-image-bg-window: linear-gradient(rgba(20, 20, 20, 0.72), rgba(18, 18, 18, 0.89));
+
+    --color-stroke: rgba(255, 255, 255, 0.06);
+    --color-stroke-s: rgba(255, 255, 255, 0.04);
+    --color-stroke-p: rgba(255, 255, 255, 0.16);
+
+    --background-image-fg-base: linear-gradient(
+        rgba(255, 255, 255, 0.015),
+        rgba(255, 255, 255, 0.03)
     );
-    --background-image-surface-primary-success: linear-gradient(
-        --alpha(var(--color-green-950) / 55%),
-        --alpha(var(--color-green-900) / 55%)
+    --background-image-fg-base-p: linear-gradient(
+        rgba(255, 255, 255, 0.03),
+        rgba(255, 255, 255, 0.06)
     );
-    --background-image-surface-primary-warning: linear-gradient(
-        --alpha(var(--color-yellow-950) / 55%),
-        --alpha(var(--color-yellow-900) / 55%)
+    --background-image-fg-base-s: linear-gradient(
+        rgba(255, 255, 255, 0.01),
+        rgba(255, 255, 255, 0.02)
     );
-    --background-image-surface-primary-danger: linear-gradient(
-        --alpha(var(--color-red-950) / 55%),
-        --alpha(var(--color-red-900) / 55%)
+
+    --background-image-fg-inset: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.2));
+    --background-image-fg-inset-p: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.2));
+    --background-image-fg-inset-s: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.2));
+
+    --background-image-fg-red: linear-gradient(rgba(212, 0, 64, 0.22), rgba(212, 0, 64, 0.32));
+    --background-image-fg-red-p: linear-gradient(rgba(212, 0, 64, 0.1), rgba(212, 0, 64, 0.13));
+    --background-image-fg-red-s: linear-gradient(rgba(212, 0, 64, 0.1), rgba(212, 0, 64, 0.13));
+
+    --background-image-fg-orange: linear-gradient(rgba(184, 77, 0, 0.22), rgba(184, 77, 0, 0.32));
+    --background-image-fg-orange-p: linear-gradient(rgba(184, 77, 0, 0.1), rgba(184, 77, 0, 0.13));
+    --background-image-fg-orange-s: linear-gradient(rgba(184, 77, 0, 0.1), rgba(184, 77, 0, 0.13));
+
+    --background-image-fg-yellow: linear-gradient(rgba(148, 105, 4, 0.22), rgba(148, 105, 4, 0.32));
+    --background-image-fg-yellow-p: linear-gradient(
+        rgba(148, 105, 4, 0.1),
+        rgba(148, 105, 4, 0.13)
     );
-    --color-surface-component: var(--color-accent-200);
-    --color-surface-component-success: var(--color-green-700);
-    --color-surface-component-warning: var(--color-yellow-700);
-    --color-surface-component-danger: var(--color-red-700);
+    --background-image-fg-yellow-s: linear-gradient(
+        rgba(148, 105, 4, 0.1),
+        rgba(148, 105, 4, 0.13)
+    );
+
+    --background-image-fg-green: linear-gradient(rgba(0, 139, 12, 0.22), rgba(0, 139, 12, 0.32));
+    --background-image-fg-green-p: linear-gradient(rgba(0, 139, 12, 0.1), rgba(0, 139, 12, 0.13));
+    --background-image-fg-green-s: linear-gradient(rgba(0, 139, 12, 0.1), rgba(0, 139, 12, 0.13));
+
+    --background-image-fg-blue: linear-gradient(rgba(0, 124, 171, 0.22), rgba(0, 124, 171, 0.33));
+    --background-image-fg-blue-p: linear-gradient(rgba(0, 124, 171, 0.1), rgba(0, 124, 171, 0.13));
+    --background-image-fg-blue-s: linear-gradient(rgba(0, 124, 171, 0.1), rgba(0, 124, 171, 0.13));
+
+    --background-image-fg-purple: linear-gradient(rgba(148, 2, 252, 0.22), rgba(148, 2, 252, 0.22));
+    --background-image-fg-purple-p: linear-gradient(
+        rgba(148, 2, 252, 0.1),
+        rgba(148, 2, 252, 0.13)
+    );
+    --background-image-fg-purple-s: linear-gradient(
+        rgba(148, 2, 252, 0.1),
+        rgba(148, 2, 252, 0.13)
+    );
 }
 
 .display {
-    @apply text-display font-medium leading-none tracking-tight;
+    @apply text-display leading-none font-medium tracking-tight;
 }
 .large-title {
-    @apply text-large-title font-medium leading-none tracking-tight;
+    @apply text-large-title leading-none font-medium tracking-tight;
 }
 .title-1 {
-    @apply text-title-1 font-medium leading-none tracking-tight;
+    @apply text-title-1 leading-none font-medium tracking-tight;
 }
 .title-2 {
-    @apply text-title-2 font-medium leading-none tracking-tight;
+    @apply text-title-2 leading-none font-medium tracking-tight;
 }
 .title-3 {
-    @apply text-title-3 font-medium leading-none tracking-normal;
+    @apply text-title-3 leading-none font-medium tracking-normal;
 }
 .body {
     @apply text-body font-normal;
