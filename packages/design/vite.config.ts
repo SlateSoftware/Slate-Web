@@ -1,21 +1,21 @@
 /// <reference types="vitest/config" />
-import { defineConfig } from 'vite';
-import { svelte } from '@sveltejs/vite-plugin-svelte';
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from "vite";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { storybookTest } from "@storybook/addon-vitest/vitest-plugin";
 const dirname =
-    typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
+    typeof __dirname !== "undefined" ? __dirname : path.dirname(fileURLToPath(import.meta.url));
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
     plugins: [svelte(), tailwindcss()],
     resolve: {
         alias: {
-            $lib: path.resolve('./src/lib'),
+            $lib: path.resolve("./src/lib"),
         },
     },
     test: {
@@ -26,22 +26,22 @@ export default defineConfig({
                     // The plugin will run tests for the stories defined in your Storybook config
                     // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
                     storybookTest({
-                        configDir: path.join(dirname, '.storybook'),
+                        configDir: path.join(dirname, ".storybook"),
                     }),
                 ],
                 test: {
-                    name: 'storybook',
+                    name: "storybook",
                     browser: {
                         enabled: true,
                         headless: true,
-                        provider: 'playwright',
+                        provider: "playwright",
                         instances: [
                             {
-                                browser: 'chromium',
+                                browser: "chromium",
                             },
                         ],
                     },
-                    setupFiles: ['.storybook/vitest.setup.ts'],
+                    setupFiles: [".storybook/vitest.setup.ts"],
                 },
             },
         ],

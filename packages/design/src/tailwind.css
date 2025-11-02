@@ -1,12 +1,12 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin "tailwindcss-motion";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --font-sans: 'DM Sans Variable', 'DM Sans', system-ui, sans-serif;
-    --font-mono: 'DM Mono Variable', 'DM Mono', ui-monospace, SFMono-Regular, monospace;
+    --font-sans: "DM Sans Variable", "DM Sans", system-ui, sans-serif;
+    --font-mono: "DM Mono Variable", "DM Mono", ui-monospace, SFMono-Regular, monospace;
 
     --spacing: 0.0625rem;
 

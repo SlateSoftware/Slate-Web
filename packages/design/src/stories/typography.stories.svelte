@@ -1,8 +1,8 @@
 <script module>
-    import { defineMeta } from '@storybook/addon-svelte-csf';
+    import { defineMeta } from "@storybook/addon-svelte-csf";
 
     const { Story } = defineMeta({
-        title: 'Guidelines/Typography',
+        title: "Guidelines/Typography",
     });
 </script>
 

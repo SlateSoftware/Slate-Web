@@ -1,32 +1,32 @@
 <script lang="ts" module>
-    import { cn, type WithElementRef } from '$lib/utils.js';
-    import type { HTMLAnchorAttributes, HTMLButtonAttributes } from 'svelte/elements';
-    import { type VariantProps, tv } from 'tailwind-variants';
+    import { cn, type WithElementRef } from "$lib/utils.js";
+    import type { HTMLAnchorAttributes, HTMLButtonAttributes } from "svelte/elements";
+    import { type VariantProps, tv } from "tailwind-variants";
 
     export const buttonVariants = tv({
-        base: 'text-text border border-stroke',
+        base: ["text-text border border-stroke", "disabled:opacity-35 aria-disabled:opacity-35"],
         variants: {
             variant: {
-                primary: 'bg-fg-blue',
-                secondary: 'bg-fg-base ',
-                success: 'bg-fg-green ',
-                warning: 'bg-fg-yellow ',
-                danger: 'bg-fg-red ',
+                primary: "bg-fg-blue",
+                secondary: "bg-fg-base ",
+                success: "bg-fg-green ",
+                warning: "bg-fg-yellow ",
+                danger: "bg-fg-red ",
             },
             size: {
-                lg: 'h-40 rounded-16 px-16 text-body',
-                sm: 'h-30 rounded-12 px-10 text-body',
-                xs: 'h-22 rounded-10 px-6 text-caption',
+                lg: "h-40 rounded-16 px-16 text-body",
+                sm: "h-30 rounded-12 px-10 text-body",
+                xs: "h-22 rounded-10 px-6 text-caption",
             },
         },
         defaultVariants: {
-            variant: 'primary',
-            size: 'lg',
+            variant: "primary",
+            size: "lg",
         },
     });
 
-    export type ButtonVariant = VariantProps<typeof buttonVariants>['variant'];
-    export type ButtonSize = VariantProps<typeof buttonVariants>['size'];
+    export type ButtonVariant = VariantProps<typeof buttonVariants>["variant"];
+    export type ButtonSize = VariantProps<typeof buttonVariants>["size"];
 
     export type ButtonProps = WithElementRef<HTMLButtonAttributes> &
         WithElementRef<HTMLAnchorAttributes> & {
@@ -38,11 +38,11 @@
 <script lang="ts">
     let {
         class: className,
-        variant = 'primary',
-        size = 'lg',
+        variant = "primary",
+        size = "lg",
         ref = $bindable(null),
         href = undefined,
-        type = 'button',
+        type = "button",
         disabled,
         children,
         ...restProps
@@ -56,7 +56,7 @@
         class={cn(buttonVariants({ variant, size }), className)}
         href={disabled ? undefined : href}
         aria-disabled={disabled}
-        role={disabled ? 'link' : undefined}
+        role={disabled ? "link" : undefined}
         tabindex={disabled ? -1 : undefined}
         {...restProps}
     >
