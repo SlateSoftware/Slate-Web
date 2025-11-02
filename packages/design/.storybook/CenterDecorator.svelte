@@ -11,7 +11,7 @@
 <style>
     div {
         display: flex;
-        align-items: center;
+        align-items: top;
         justify-content: center;
         height: 100%;
         padding: 2rem;

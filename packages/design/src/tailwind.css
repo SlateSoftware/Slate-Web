@@ -8,6 +8,8 @@
     --font-sans: 'DM Sans Variable', 'DM Sans', system-ui, sans-serif;
     --font-mono: 'DM Mono Variable', 'DM Mono', ui-monospace, SFMono-Regular, monospace;
 
+    --spacing: 0.0625rem;
+
     --text-display: 3.5rem;
     --text-large-title: 2.188rem;
     --text-title-1: 1.438rem;
@@ -19,7 +21,7 @@
     --radius-4: 0.25rem;
     --radius-6: 0.375rem;
     --radius-8: 0.5rem;
-    --radius-10: 0.625;
+    --radius-10: 0.625rem;
     --radius-12: 0.75rem;
     --radius-14: 0.875rem;
     --radius-16: 1rem;
@@ -230,19 +232,19 @@
 }
 
 .display {
-    @apply text-display leading-none font-medium tracking-tight;
+    @apply text-display font-medium leading-none tracking-tight;
 }
 .large-title {
-    @apply text-large-title leading-none font-medium tracking-tight;
+    @apply text-large-title font-medium leading-none tracking-tight;
 }
 .title-1 {
-    @apply text-title-1 leading-none font-medium tracking-tight;
+    @apply text-title-1 font-medium leading-none tracking-tight;
 }
 .title-2 {
-    @apply text-title-2 leading-none font-medium tracking-tight;
+    @apply text-title-2 font-medium leading-none tracking-tight;
 }
 .title-3 {
-    @apply text-title-3 leading-none font-medium tracking-normal;
+    @apply text-title-3 font-medium leading-none tracking-normal;
 }
 .body {
     @apply text-body font-normal;
