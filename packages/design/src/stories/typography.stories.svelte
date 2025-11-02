@@ -7,7 +7,7 @@
 </script>
 
 <Story name="Typography">
-    <div class="text-text flex max-w-[32rem] flex-col gap-8">
+    <div class="text-text flex max-w-[32rem] flex-col gap-20">
         <h1 class="display">Display</h1>
         <h1 class="large-title">Large Title</h1>
         <h1 class="title-1">Title 1</h1>
@@ -16,6 +16,13 @@
         <p class="body tracking-normal">Body 1 line</p>
         <p class="body leading-relaxed">
             Body paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+            nisl vel aliquam aliquet, nisl nisl aliquet nisl, vel aliquet nisl nisl vel aliquet.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel aliquam
+            aliquet, nisl nisl aliquet nisl, vel aliquet nisl nisl vel aliquet.
+        </p>
+        <p class="caption tracking-normal">Caption 1 line</p>
+        <p class="caption leading-relaxed">
+            Caption paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
             nisl vel aliquam aliquet, nisl nisl aliquet nisl, vel aliquet nisl nisl vel aliquet.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel aliquam
             aliquet, nisl nisl aliquet nisl, vel aliquet nisl nisl vel aliquet.
@@ -31,7 +38,7 @@
 </Story>
 
 <Story name="Mono">
-    <div class="text-text flex max-w-[32rem] flex-col gap-8">
+    <div class="text-text flex max-w-[32rem] flex-col gap-20">
         <h1 class="title-1 font-mono uppercase">Title 1 Uppercase</h1>
         <h1 class="title-1 font-mono">Title 1</h1>
         <h2 class="title-2 font-mono uppercase">Title 2 Uppercase</h2>
