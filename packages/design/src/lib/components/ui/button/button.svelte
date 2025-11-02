@@ -14,9 +14,9 @@
                 danger: 'bg-fg-red ',
             },
             size: {
-                lg: 'h-40 rounded-16 px-16',
-                sm: 'h-30 rounded-12 px-10',
-                xs: 'h-22 rounded-10 px-6',
+                lg: 'h-40 rounded-16 px-16 text-body',
+                sm: 'h-30 rounded-12 px-10 text-body',
+                xs: 'h-22 rounded-10 px-6 text-caption',
             },
         },
         defaultVariants: {

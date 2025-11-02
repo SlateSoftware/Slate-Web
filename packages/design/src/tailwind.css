@@ -16,6 +16,7 @@
     --text-title-2: 1.188rem;
     --text-title-3: 1rem;
     --text-body: 0.813rem;
+    --text-caption: 0.75rem;
     --text-sub: 0.65rem;
 
     --radius-4: 0.25rem;
@@ -247,10 +248,13 @@
     @apply text-title-3 font-medium leading-none tracking-normal;
 }
 .body {
-    @apply text-body font-normal;
+    @apply text-body mb-1 font-normal;
+}
+.caption {
+    @apply text-caption mb-1 font-normal;
 }
 .subtext {
-    @apply text-sub font-normal;
+    @apply text-sub mb-1 font-normal;
 }
 
 code {
