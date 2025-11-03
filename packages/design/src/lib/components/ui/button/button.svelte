@@ -4,14 +4,18 @@
     import { type VariantProps, tv } from "tailwind-variants";
 
     export const buttonVariants = tv({
-        base: ["text-text border border-stroke", "disabled:opacity-35 aria-disabled:opacity-35"],
+        base: [
+            "border border-stroke text-text",
+            "disabled:opacity-50 aria-disabled:opacity-50",
+            "hover:brightness-110 active:scale-95 duration-150 ease-out",
+        ],
         variants: {
             variant: {
                 primary: "bg-fg-blue",
-                secondary: "bg-fg-base ",
-                success: "bg-fg-green ",
-                warning: "bg-fg-yellow ",
-                danger: "bg-fg-red ",
+                secondary: "bg-fg-base",
+                success: "bg-fg-green",
+                warning: "bg-fg-yellow",
+                danger: "bg-fg-red",
             },
             size: {
                 lg: "h-40 rounded-16 px-16 text-body",

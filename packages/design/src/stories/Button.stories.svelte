@@ -1,34 +1,34 @@
 <script module>
-    import { defineMeta } from '@storybook/addon-svelte-csf';
-    import { Button } from '$lib/components/ui/button/index.ts';
-    import { fn } from 'storybook/test';
+    import { defineMeta } from "@storybook/addon-svelte-csf";
+    import { Button } from "$lib/components/ui/button/index.ts";
+    import { fn } from "storybook/test";
 
     const { Story } = defineMeta({
-        title: 'Components/Button',
-        tags: ['autodocs'],
+        title: "Components/Button",
+        tags: ["autodocs"],
         component: Button,
         argTypes: {
             label: {
-                control: { type: 'text' },
+                control: { type: "text" },
             },
             variant: {
                 control: {
-                    type: 'select',
+                    type: "select",
                 },
-                options: ['primary', 'secondary', 'success', 'warning', 'danger'],
+                options: ["primary", "secondary", "success", "warning", "danger"],
             },
             size: {
-                control: { type: 'select' },
-                options: ['lg', 'sm', 'xs'],
+                control: { type: "select" },
+                options: ["lg", "sm", "xs"],
             },
             disabled: {
-                control: { type: 'boolean' },
+                control: { type: "boolean" },
             },
         },
         args: {
-            label: 'Button',
-            variant: 'primary',
-            size: 'lg',
+            label: "Button",
+            variant: "primary",
+            size: "lg",
             disabled: false,
             onclick: fn(),
         },
