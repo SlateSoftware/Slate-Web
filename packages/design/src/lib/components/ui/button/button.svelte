@@ -5,9 +5,9 @@
 
     export const buttonVariants = tv({
         base: [
-            "border border-stroke text-text",
+            "border border-stroke !text-text",
+            "enabled:hover:brightness-110 enabled:active:scale-95 duration-150 ease-out",
             "disabled:opacity-50 aria-disabled:opacity-50",
-            "hover:brightness-110 active:scale-95 duration-150 ease-out",
         ],
         variants: {
             variant: {
@@ -20,7 +20,7 @@
             size: {
                 lg: "h-40 rounded-16 px-16 text-body",
                 sm: "h-30 rounded-12 px-10 text-body",
-                xs: "h-22 rounded-10 px-6 text-caption",
+                xs: "h-22 rounded-10 px-6 text-caption leading-0",
             },
         },
         defaultVariants: {
