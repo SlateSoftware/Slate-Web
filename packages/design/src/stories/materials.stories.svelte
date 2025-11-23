@@ -6,7 +6,7 @@
     });
 </script>
 
-<Story name="Glass">
+<Story name="Fluesent">
     <div class="text-text flex min-w-[32rem] flex-col gap-16">
         <div
             class="bg-bg-window rounded-16 border-stroke flex w-full flex-col gap-6 border p-12 pt-64"
