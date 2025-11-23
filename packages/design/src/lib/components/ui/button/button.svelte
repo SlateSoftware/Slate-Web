@@ -11,7 +11,7 @@
         ],
         variants: {
             variant: {
-                primary: "bg-fg-blue",
+                primary: "bg-fg-accent",
                 secondary: "bg-fg-base",
                 success: "bg-fg-green",
                 warning: "bg-fg-yellow",

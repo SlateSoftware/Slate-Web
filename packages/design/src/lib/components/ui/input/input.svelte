@@ -4,7 +4,11 @@
     import { tv, type VariantProps } from "tailwind-variants";
 
     const inputVariants = tv({
-        base: ["bg-fg-base border border-stroke text-text placeholder:text-text-2"],
+        base: [
+            "bg-fg-base border border-stroke !text-text placeholder:text-text-2",
+            "outline-none focus-visible:border-accent focus-visible:ring-accent/30 focus-visible:ring-[3px] ring-offset-background",
+            "aria-invalid:ring-red/20 aria-invalid:border-red",
+        ],
         variants: {
             size: {
                 lg: "h-40 rounded-10 px-16 text-body",

@@ -59,6 +59,14 @@
     --color-blue-invert: rgba(0, 177, 242, 1);
     --color-purple-invert: rgba(184, 135, 255, 1);
 
+    /* Accent */
+    --color-accent: var(--color-blue);
+    --color-accent-invert: var(--color-blue-invert);
+
+    --background-image-fg-accent: var(--background-image-fg-blue);
+    --background-image-fg-accent-p: var(--background-image-fg-blue-p);
+    --background-image-fg-accent-s: var(--background-image-fg-blue-s);
+
     /* Materials */
     --color-bg: rgba(241, 241, 241, 1);
     --background-image-bg-window: linear-gradient(
