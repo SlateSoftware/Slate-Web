@@ -13,9 +13,22 @@ import { LogoSlate } from "@slatetech/design/logo-slate";
 ---
 
 <Layout title="Construction">
-    <section id="head" class="w-4xl py-12">
+    <section id="head" class="w-4xl flex flex-col gap-12 py-12">
         <div class="flex items-center gap-8">
             <LogoSlate size={28} /><h1 class="large-title">Slate</h1>
+        </div>
+        <div class="rounded-24 border-stroke bg-fg-base flex flex-col gap-8 border p-32">
+            <p class="body leading-relaxed">
+                We want to deliver highly polished software, hardware, and operating systems, all
+                while staying free and open source at the core. Design is the absolute priority for
+                us, along with speed and simplicity, all contributing to a great and highly polished
+                user experience.
+            </p>
+            <p class="body leading-relaxed">
+                As of now, we are focused on finalizing our design system and concepts, developing
+                web app experiments, and experimenting with custom desktop environments and Linux
+                GUIs.
+            </p>
         </div>
     </section>
 </Layout>
