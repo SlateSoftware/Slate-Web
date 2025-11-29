@@ -18,7 +18,7 @@ const { title } = Astro.props;
         <link rel="sitemap" href="/sitemap-index.xml" />
         <title>{title} ~ Slate</title>
     </head>
-    <body class="bg-bg text-text flex items-start justify-center overflow-x-hidden px-12">
-        <slot />
+    <body class="bg-bg text-text flex items-start justify-center overflow-x-hidden p-12">
+        <main class="flex flex-col gap-12"><slot /></main>
     </body>
 </html>
