@@ -1,0 +1,21 @@
+---
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/700.css";
+import "@fontsource/dm-mono/400.css";
+import "~/styles/base.css";
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="sitemap" href="/sitemap-index.xml" />
+        <title>{title} ~ Slate</title>
+    </head>
+    <body class="bg-bg text-text flex items-start justify-center overflow-x-hidden">
+        <slot />
+    </body>
+</html>

@@ -12,6 +12,9 @@
     },
     "dependencies": {
         "@astrojs/svelte": "^7.2.2",
+        "@slatetech/design": "workspace:*",
+        "@fontsource/dm-mono": "^5.2.7",
+        "@fontsource/dm-sans": "^5.2.8",
         "@tailwindcss/vite": "^4.1.17",
         "astro": "^5.14.1",
         "svelte": "^5.43.14",

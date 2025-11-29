@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "storybook dev -p 4321",
         "build": "storybook build",
+        "gen:exports": "bun scripts/generate-exports.js",
         "check": "svelte-check --tsconfig ./tsconfig.app.json && bun tsc -p tsconfig.node.json"
     },
     "devDependencies": {
@@ -42,5 +43,32 @@
         "phosphor-icons-svelte": "^2.1.0",
         "tailwindcss": "^4.1.13",
         "tailwindcss-motion": "^1.1.1"
+    },
+    "exports": {
+        "./input": {
+            "svelte": "./src/lib/components/ui/input/index.js",
+            "default": "./src/lib/components/ui/input/index.js",
+            "types": "./src/lib/components/ui/input/index.d.ts"
+        },
+        "./checkbox": {
+            "svelte": "./src/lib/components/ui/checkbox/index.js",
+            "default": "./src/lib/components/ui/checkbox/index.js",
+            "types": "./src/lib/components/ui/checkbox/index.d.ts"
+        },
+        "./button": {
+            "svelte": "./src/lib/components/ui/button/index.js",
+            "default": "./src/lib/components/ui/button/index.js",
+            "types": "./src/lib/components/ui/button/index.d.ts"
+        },
+        "./logo-slate": {
+            "svelte": "./src/lib/components/brand/logo-slate/index.js",
+            "default": "./src/lib/components/brand/logo-slate/index.js",
+            "types": "./src/lib/components/brand/logo-slate/index.d.ts"
+        },
+        "./utils": {
+            "svelte": "./src/lib/utils.js",
+            "default": "./src/lib/utils.js",
+            "types": "./src/lib/utils.d.ts"
+        }
     }
 }
