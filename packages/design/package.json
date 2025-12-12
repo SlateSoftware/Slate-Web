@@ -6,9 +6,15 @@
     "scripts": {
         "dev": "storybook dev -p 4321",
         "build": "storybook build",
-        "gen:exports": "bun scripts/generate-exports.js",
+        "build:ui": "svelte-package && bun scripts/generate-exports.js",
         "check": "svelte-check --tsconfig ./tsconfig.app.json && bun tsc -p tsconfig.node.json"
     },
+    "sideEffects": [
+        "**/*.css"
+    ],
+    "module": "./src/lib/index.ts",
+    "types": "./dist/index.d.ts",
+    "svelte": "./dist/index.js",
     "devDependencies": {
         "@chromatic-com/storybook": "4.1.1",
         "@internationalized/date": "^3.8.1",
@@ -39,36 +45,41 @@
     "dependencies": {
         "@fontsource/dm-mono": "^5.2.7",
         "@fontsource/dm-sans": "^5.2.8",
+        "@sveltejs/package": "^2.5.7",
         "@tailwindcss/vite": "^4.1.13",
         "phosphor-icons-svelte": "^2.1.0",
         "tailwindcss": "^4.1.13",
         "tailwindcss-motion": "^1.1.1"
     },
+    "files": [
+        "dist/**/*",
+        "src/tailwind.css"
+    ],
     "exports": {
         "./input": {
-            "svelte": "./src/lib/components/ui/input/index.js",
-            "default": "./src/lib/components/ui/input/index.js",
-            "types": "./src/lib/components/ui/input/index.d.ts"
+            "svelte": "./dist/components/ui/input/index.js",
+            "default": "./dist/components/ui/input/index.js",
+            "types": "./dist/components/ui/input/index.d.ts"
         },
         "./checkbox": {
-            "svelte": "./src/lib/components/ui/checkbox/index.js",
-            "default": "./src/lib/components/ui/checkbox/index.js",
-            "types": "./src/lib/components/ui/checkbox/index.d.ts"
+            "svelte": "./dist/components/ui/checkbox/index.js",
+            "default": "./dist/components/ui/checkbox/index.js",
+            "types": "./dist/components/ui/checkbox/index.d.ts"
         },
         "./button": {
-            "svelte": "./src/lib/components/ui/button/index.js",
-            "default": "./src/lib/components/ui/button/index.js",
-            "types": "./src/lib/components/ui/button/index.d.ts"
+            "svelte": "./dist/components/ui/button/index.js",
+            "default": "./dist/components/ui/button/index.js",
+            "types": "./dist/components/ui/button/index.d.ts"
         },
         "./logo-slate": {
-            "svelte": "./src/lib/components/brand/logo-slate/index.js",
-            "default": "./src/lib/components/brand/logo-slate/index.js",
-            "types": "./src/lib/components/brand/logo-slate/index.d.ts"
+            "svelte": "./dist/components/brand/logo-slate/index.js",
+            "default": "./dist/components/brand/logo-slate/index.js",
+            "types": "./dist/components/brand/logo-slate/index.d.ts"
         },
         "./utils": {
-            "svelte": "./src/lib/utils.js",
-            "default": "./src/lib/utils.js",
-            "types": "./src/lib/utils.d.ts"
+            "svelte": "./dist/utils.js",
+            "default": "./dist/utils.js",
+            "types": "./dist/utils.d.ts"
         }
     }
 }
