@@ -13,6 +13,9 @@
     "sideEffects": [
         "**/*.css"
     ],
+    "publishConfig": {
+        "access": "public"
+    },
     "module": "./src/lib/index.ts",
     "types": "./dist/index.d.ts",
     "svelte": "./dist/index.js",
