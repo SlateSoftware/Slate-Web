@@ -36,8 +36,3 @@ jobs:
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
               run: bunx changeset publish
-
-            - name: GitHub Release
-              uses: softprops/action-gh-release@v2
-              with:
-                  generate_release_notes: true
