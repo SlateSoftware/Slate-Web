@@ -35,4 +35,6 @@ jobs:
             - name: Publish
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-              run: bunx changeset publish
+              run: |
+                  npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
+                  bunx changeset publish
