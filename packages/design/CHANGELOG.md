@@ -1,5 +1,11 @@
 # @slatetech/design
 
+## 1.0.5
+
+### Patch Changes
+
+- 8215ba2: hoo lee sheet
+
 ## 1.0.4
 
 ### Patch Changes
