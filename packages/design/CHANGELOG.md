@@ -1,5 +1,11 @@
 # @slatetech/design
 
+## 1.0.4
+
+### Patch Changes
+
+- c68cbdc: asd
+
 ## 1.0.3
 
 ### Patch Changes
