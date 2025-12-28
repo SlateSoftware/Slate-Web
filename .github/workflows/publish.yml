@@ -1,0 +1,43 @@
+name: Release
+
+on:
+    push:
+        branches:
+            - main
+
+permissions:
+    contents: write
+    packages: write
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+
+            - uses: oven-sh/setup-bun@v1
+
+            - run: bun install --frozen-lockfile
+
+            - run: bunx changeset version
+
+            - name: Commit version updates
+              run: |
+                  git config user.name "changeset-bot"
+                  git config user.email "bot@users.noreply.github.com"
+                  git add .
+                  git commit -m "release: version packages" || echo "no changes"
+                  git push
+
+            - name: Publish
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+              run: bunx changeset publish
+
+            - name: GitHub Release
+              uses: softprops/action-gh-release@v2
+              with:
+                  generate_release_notes: true

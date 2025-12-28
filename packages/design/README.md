@@ -45,4 +45,16 @@ bun unlink @slatetech/design
 bun install
 ```
 
-To publish, open a pull request into main. Once it lands, the publish step runs.
+## Publish a Feature
+
+Once you're done developing a feature, run the following command:
+
+```bash
+bunx changeset
+```
+
+- then select @slatetech/design
+- choose patch, minor, or major
+- write one short summary line
+
+Then open a PR into `main`, we'll review it and merge it, then it'll be automatically published via CI.
