@@ -57,4 +57,4 @@ bunx changeset
 - choose patch, minor, or major
 - write one short summary line
 
-Then open a PR into `main`, we'll review it and merge it, then it'll be automatically published via CI.
+Then open a PR into `main`, we'll review it and merge it, then it'll be automatically published.
