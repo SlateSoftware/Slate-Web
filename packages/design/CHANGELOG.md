@@ -1,5 +1,11 @@
 # @slatetech/design
 
+## 1.0.7
+
+### Patch Changes
+
+- 542778e: asd
+
 ## 1.0.6
 
 ### Patch Changes
