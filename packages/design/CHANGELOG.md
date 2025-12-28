@@ -1,5 +1,11 @@
 # @slatetech/design
 
+## 1.0.6
+
+### Patch Changes
+
+- 8107f97: .,sa/mnd jlijsf
+
 ## 1.0.5
 
 ### Patch Changes
