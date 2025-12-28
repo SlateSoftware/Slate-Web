@@ -1,5 +1,11 @@
 # @slatetech/design
 
+## 1.0.2
+
+### Patch Changes
+
+- 3fc9f3f: test publish
+
 ## 1.0.1
 
 ### Patch Changes

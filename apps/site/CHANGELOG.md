@@ -1,5 +1,12 @@
 # @slatetech/site
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies [3fc9f3f]
+    - @slatetech/design@1.0.2
+
 ## 0.0.3
 
 ### Patch Changes
