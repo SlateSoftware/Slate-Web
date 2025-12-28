@@ -1,5 +1,11 @@
 # @slatetech/design
 
+## 1.0.1
+
+### Patch Changes
+
+- ff9d708: test publish again
+
 ## 1.0.0
 
 ### Major Changes
