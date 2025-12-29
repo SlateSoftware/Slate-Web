@@ -1,5 +1,11 @@
 # @slatetech/design
 
+## 1.0.9
+
+### Patch Changes
+
+- 49d50d8: fix workflow to build ui, not storybook LOL
+
 ## 1.0.8
 
 ### Patch Changes
