@@ -1,5 +1,11 @@
 # @slatetech/design
 
+## 1.0.8
+
+### Patch Changes
+
+- 389769e: fix publish workflow to build dist
+
 ## 1.0.7
 
 ### Patch Changes
