@@ -28,9 +28,9 @@ function findComponentDirs(dir, basePath = "") {
                     statSync(indexPath);
                     components.push({
                         name: item,
+                        typesPath: `./dist/${currentPath}/index.d.ts`,
                         path: currentPath,
                         distPath: `./dist/${currentPath}/index.js`,
-                        typesPath: `./dist/${currentPath}/index.d.ts`,
                     });
                 } catch {
                     // No index.ts file, continue searching subdirectories
@@ -86,9 +86,9 @@ function generateExports() {
     try {
         statSync(join(libDir, "index.ts"));
         newExports["."] = {
+            types: "./dist/index.d.ts",
             svelte: "./dist/index.js",
             default: "./dist/index.js",
-            types: "./dist/index.d.ts",
         };
     } catch {
         // No index.ts file in lib directory
@@ -98,9 +98,9 @@ function generateExports() {
     for (const component of components) {
         const exportKey = `./${component.name}`;
         newExports[exportKey] = {
+            types: component.typesPath,
             svelte: component.distPath,
             default: component.distPath,
-            types: component.typesPath,
         };
     }
 
@@ -108,9 +108,9 @@ function generateExports() {
     try {
         statSync(join(libDir, "utils.ts"));
         newExports["./utils"] = {
+            types: "./dist/utils.d.ts",
             svelte: "./dist/utils.js",
             default: "./dist/utils.js",
-            types: "./dist/utils.d.ts",
         };
         console.log("   - utils (utils.ts)");
     } catch {
