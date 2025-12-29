@@ -23,7 +23,7 @@ jobs:
             - run: bun install --frozen-lockfile
 
             - name: Build design package
-              run: bun run design build
+              run: bun run design build:ui
 
             - name: Run changesets
               run: bunx changeset version

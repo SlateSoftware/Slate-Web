@@ -7,7 +7,7 @@ Slate Design 1 is a Svelte 5 design system for building modern web applications.
 To install Slate Design 1, run the following command:
 
 ```bash
-bun add @slate-web/design
+bun add @slatetech/design
 ```
 
 ## Development
